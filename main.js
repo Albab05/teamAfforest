@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
-
+const port = process.env.PORT || 8000;
 const app = express();
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 const connection = mysql.createConnection({
@@ -38,6 +38,6 @@ app.post('/home/donate', urlencodedParser, function (req, res) {
             //console.log(result);
         });
   });
-const server = app.listen(3000 , ()=>{
-    console.log('Server is listening');
+const server = app.listen(port , ()=>{
+    console.log(`Server is listening ${port}`);
 });
