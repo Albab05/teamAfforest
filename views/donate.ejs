@@ -1,0 +1,39 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<link rel="stylesheet" href="../assets/donate.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<body>
+    <form method="POST" action="/home/donate" id="form">
+     <div class="holder">
+        <h3>DETAILS</h3>
+        <label for="">
+            <span>NAME</span>
+            <input type="text" id="name" name="name" value="" placeholder="Enter Your Name">
+        </label>
+        <label for="">
+            <span>EMAIL ID</span>
+            <input type="text" name="email" value="" placeholder="Enter Your Email Id">
+        </label>
+        <label for="">
+            <span>AMOUNT</span>
+            <input type="text" name="amount" value="" placeholder="Enter Your Amount">
+        </label>
+        <label for="">
+            <span>MESSAGE</span>
+            <input type="text" name="message" value="" placeholder="Any Message...">
+        </label>
+        <div class="check-box">
+            <input type="checkbox" value="checked" name="checkbox">
+            <label for="">I want to get future updates of Grow India</label>
+        </div>
+        <input type="submit" value="NEXT">
+        </input>
+     </div>
+    </form>
+    <script src="../reset.js"></script>   
+</body>
+</html>

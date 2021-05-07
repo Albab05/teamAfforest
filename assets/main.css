@@ -1,0 +1,736 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+.container
+{
+    width: 100%;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    background: url(/assets/images/bg.jpg);
+    background-size: cover;
+}
+.header
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    position: relative;
+}
+.header img
+{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.09em;
+    padding-left: 1em;
+    padding-top: 0.2em;
+    border: 1em;
+    text-transform: uppercase;
+    font-size:2em;
+    width: 15%;
+    color: #05386B;
+    height: 15vh;
+}
+.header .menu
+{
+    padding: 1em;
+    width: 47%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.header ul
+{
+    padding: 0.5em;
+    float: right;
+}
+.header ul li
+{
+    background: #05386B;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.4em;
+    height: 100%;
+    cursor: pointer;
+    list-style: none;
+    display: inline;
+}
+.header ul li:hover
+{
+    background: #EDF5E1;
+    transition: 0.5s;
+}
+.header ul li:hover a
+{
+    color: #05386B;
+    transition: 0.5s;
+}
+.header ul li a
+{
+    font-size: 0.6em;
+    text-decoration: none;
+    color: #EDF5E1;
+}
+.content
+{
+    width: 100%;
+    height: 85%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+}
+.body
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.body h3
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    position: relative;
+    padding-bottom: 1em;
+    max-width: 100%;
+    text-align: center;
+    color: #05386B;
+}
+/*.body h3::after
+{
+    animation: blink 0.5s infinite;
+    content: '';
+    position: absolute;
+    margin-left: 2px;
+    border: 2px solid #05386B;
+    height: 15%;
+}*/
+.body a
+{
+    position: relative;
+    text-decoration: none;
+    color: #05386B;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: 'Montserrat', sans-serif;
+    left: 41%;
+    border: 2px solid #05386B;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+.body a:hover
+{
+    transition: 0.5s;
+    background: #05386B;
+    color: #EDF5E1;
+}
+.img
+{
+    width: 35%;
+    height: 90%;
+    background-size: cover;
+}
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    padding-top: 2em;
+    background: #062340;
+}
+/*.footer::before
+{
+    content: '';
+    position: relative;
+    top: -25%;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    z-index: 1;
+    background: linear-gradient(to top,#062340,transparent);
+}*/
+.footer .icons
+{
+    position: relative;
+    top: 55%;
+    width: 30%;
+    left: 55%;
+    transform: translateX(-50%);
+    display: none;
+    flex-direction: row;
+}
+.footer .icons img
+{
+    width: 10%;
+    cursor: pointer;
+}
+.footer .icons img:not(:last-child)
+{
+    padding-right: 10%;
+}
+.footer .footer-content
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.footer .footer-content .newsletter
+{
+    position: relative;
+    left: 5%;
+    top: 10%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.footer .footer-content .newsletter h2
+{
+    font-family: 'Roboto', sans-serif;
+    color: #EDF5E1;
+    padding-bottom: 0.5em;
+}
+.footer .footer-content .newsletter input[type="text"]
+{
+    width: 100%;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    margin: 2px;
+    color: #EDF5E1;
+    outline: none;
+    height: 5vh;
+    border-bottom: 2px solid #5CDB95;
+    padding-bottom: 0.2em;
+}
+.footer .footer-content .newsletter input[type="text"]:focus
+{
+    animation: news-animate 2s ease-in-out;
+}
+.footer .footer-content .newsletter  input[type="text"]:focus::placeholder
+{
+    transition: 0.7s;
+    opacity: 0;
+}
+.footer .footer-content .newsletter  input[type="text"]:focus 
+{
+    padding-bottom: 0.5em;
+    transition: 1s;
+    font-size: 1em;
+}
+.footer .footer-content .newsletter  input[type="text"]:focus
+{
+    padding-top: 0.5em;
+    transition: 1s;
+}
+.footer .footer-content .newsletter button
+{
+    position: relative;
+    margin-top: 0.6em;
+    padding: 0.5;
+    color: #EDF5E1;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 30%;
+    padding-left: 5%;
+    padding-right: 75%;
+    height: 40%;
+    background: #ff0370;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+.footer .footer-content .newsletter button:hover
+{
+    background: #ff2b87;
+    transition: 0.5s;
+}
+.footer .footer-content .connect
+{
+    position: relative;
+    padding-left: 5%;
+    margin-left: 5%;
+    width: 20%;
+    top: 5%;
+    font-family: 'Poppins', sans-serif;
+}
+.footer .footer-content .connect h2
+{
+    color: #EDF5E1;
+    padding-left: 0.5em;
+    opacity: 0.5;
+}
+.footer .footer-content .connect ul
+{
+    margin-left: 0.5em;
+}
+.footer .footer-content .connect ul li
+{
+    width: 100%;
+    list-style: none;
+    padding: 0.5em;
+}
+.footer .footer-content .connect ul li img
+{
+    width: 8%;
+}
+.footer .footer-content .connect ul li a
+{
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: #EDF5E1;
+}
+.footer .footer-content .unnecessary
+{
+    width: 40%;
+    position: relative;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    padding-left: 5%;
+    overflow: hidden;
+}
+.footer .footer-content .unnecessary h2
+{
+    position: relative;
+    top: 20%;
+    color: #EDF5E1;
+    font-family: 'Poppins' , sans-serif;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    opacity: 0.7;
+    line-height: 1em;
+}
+.footer .footer-content .unnecessary img
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1em;
+    width: 50%;
+    opacity: 0.3;
+}
+@keyframes news-animate
+{
+    0%
+    {
+        border-bottom: 2px solid #5CDB95;
+    }
+    50%
+    {
+        border-bottom: 2px solid #ff0370;
+    }
+    100%
+    {
+        border-bottom: 2px solid #5CDB95;
+    }
+}
+@keyframes blink
+{
+    0%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 828px) and (min-width: 828px)
+{
+    .container
+    {
+        height: 70%;
+    }
+    .footer
+    {
+        height: 30%;
+        max-height: 30%;
+    }
+    .container .header h2
+    {
+        font-size: 1.2em;
+    }
+    .body h3
+    {
+        font-size: 2.5em;
+    }
+    .body a
+    {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+        left: 30%;
+        font-size: 1.5em;
+    }
+    .header img
+    {
+        padding-left: 10px;
+        padding-top: 3px;
+        margin: 1px;
+        width: 40%;
+        height: auto;
+    }
+    .container
+    {
+        background-size: 500%;
+    }
+    .footer::before
+    {
+        bottom: 33.3em;
+        height: 5vh;
+    }
+    .footer
+    {
+        height: 50%;
+    }
+    .footer .footer-content
+    {
+        padding-top: 5em;
+    }
+    .footer .footer-content .newsletter
+    {
+        padding-right: 2em;
+        width: 40%;
+    }
+    .footer .footer-content .newsletter h2
+    {
+        padding-bottom: 0.1em;
+        font-size: 2.2em;
+    }
+    .footer .footer-content .unnecessary
+    {
+        padding-left: 3em;
+    }
+    .footer .footer-content .newsletter input[type="text"]
+    {
+        width: 80%;
+        height: 2.5vh;
+        font-size: 1.6em;
+    }
+    .footer .footer-content .connect
+    {
+        display: none;
+    }
+    .footer .footer-content .newsletter button
+    {
+        padding-right: 50%;
+        height: 40%;
+        font-size: 1.5em;
+    }
+    .footer .footer-content .unnecessary h2
+    {
+        top: 10%;
+        line-height: 1.5em;
+    }
+    .footer .icons
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1170px) and (min-width: 1170px)
+{
+    .container
+    {
+        height: 70%;
+    }
+    .footer
+    {
+        height: 30%;
+        max-height: 30%;
+    }
+    .container .header h2
+    {
+        font-size: 1.2em;
+    }
+    .body h3
+    {
+        font-size: 3em;
+    }
+    .body a
+    {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+        left: 32%;
+        font-size: 1.8em;
+    }
+    .header img
+    {
+        padding-left: 10px;
+        padding-top: 3px;
+        margin: 1px;
+        width: 40%;
+        height: auto;
+    }
+    .container
+    {
+        background-size: 500%;
+    }
+    .footer::before
+    {
+        bottom: 47.3em;
+        height: 5vh;
+    }
+    .footer
+    {
+        height: 50%;
+    }
+    .footer .footer-content
+    {
+        padding-top: 5em;
+    }
+    .footer .footer-content .newsletter
+    {
+        width: 40%;
+    }
+    .footer .footer-content .newsletter h2
+    {
+        padding-bottom: 0.1em;
+        font-size: 2.2em;
+    }
+    .footer .footer-content .unnecessary
+    {
+        padding-left: 3em;
+    }
+    .footer .footer-content .newsletter input[type="text"]
+    {
+        width: 80%;
+        height: 2.5vh;
+        font-size: 1.6em;
+    }
+    .footer .footer-content .connect ul li a
+    {
+        font-size: 1.3em;
+    }
+    .footer .footer-content .connect h2
+    {
+        font-size: 2em;
+        padding-bottom: 0.3em;
+    }
+    .footer .footer-content .newsletter button
+    {
+        padding-right: 50%;
+        height: 40%;
+        font-size: 1.5em;
+    }
+    .footer .footer-content .unnecessary h2
+    {
+        top: 10%;
+        line-height: 1.5em;
+        font-size: 2em;
+    }
+    .footer .icons
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1080px) and (min-width: 1080px)
+{
+    .container
+    {
+        height: 70%;
+    }
+    .footer
+    {
+        height: 30%;
+        max-height: 30%;
+    }
+    .container .header h2
+    {
+        font-size: 1.2em;
+    }
+    .body h3
+    {
+        font-size: 3em;
+    }
+    .body a
+    {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+        left: 32%;
+        font-size: 1.8em;
+    }
+    .header img
+    {
+        padding-left: 10px;
+        padding-top: 3px;
+        margin: 1px;
+        width: 40%;
+        height: auto;
+    }
+    .container
+    {
+        background-size: 500%;
+    }
+    .footer::before
+    {
+        bottom: 42em;
+        height: 5vh;
+    }
+    .footer
+    {
+        height: 50%;
+    }
+    .footer .footer-content
+    {
+        padding-top: 5em;
+    }
+    .footer .footer-content .newsletter
+    {
+        padding-right: 2em;
+        width: 40%;
+    }
+    .footer .footer-content .newsletter h2
+    {
+        padding-bottom: 0.1em;
+        font-size: 2.2em;
+    }
+    .footer .footer-content .unnecessary
+    {
+        padding-left: 3em;
+    }
+    .footer .footer-content .newsletter input[type="text"]
+    {
+        width: 80%;
+        height: 2.5vh;
+        font-size: 1.6em;
+    }
+    .footer .footer-content .connect
+    {
+        display: none;
+    }
+    .footer .footer-content .newsletter button
+    {
+        padding-right: 50%;
+        height: 40%;
+        font-size: 1.5em;
+    }
+    .footer .footer-content .unnecessary h2
+    {
+        top: 10%;
+        line-height: 1.5em;
+        font-size: 2em;
+    }
+    .footer .icons
+    {
+        display: none;
+    }
+}
+@media only screen and (max-height: 2340px) and (min-height: 2340px)
+{
+    .footer::before
+    {
+        bottom:43.5em;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 768px)
+{
+    .footer::before
+    {
+        bottom:-7em;
+    }
+    .footer .icons
+    {
+        display: none;
+    }
+    .footer
+    {
+        height: 50%;
+    }
+    .footer .footer-content .newsletter button
+    {
+        font-size: 1.1em;
+        height: 30%;
+    }
+    .footer .footer-content .newsletter input[type="text"]
+    {
+        padding-bottom: 0.1em;
+        font-size: 1em;
+    }
+    .container .header img
+    {
+        width: 30%;
+    }
+    .container
+    {
+        background-size: 400%;
+    }
+    .body a
+    {
+        left: 35%;
+    }
+}
+@media only screen and (max-width: 1248px) and (min-width: 1248px)
+{
+    .header img
+    {
+        width: 15em;
+    }
+    .container
+    {
+        background-size: 400%;
+    }
+    .content .body .intro h3
+    {
+        font-size: 3em;
+    }
+    .body a
+    {
+        font-size: 1.5em;
+        left: 35%;
+    }
+    .container
+    {
+        height: 70%;
+    }
+    .footer
+    {
+        padding-top: 2em;
+        height: 30%;
+    }
+    .footer .footer-content .newsletter button
+    {
+        font-size: 1.1em;
+        height: 25%;
+    }
+    .footer .footer-content .newsletter input[type="text"]
+    {
+        padding-bottom: 0.1em;
+        font-size: 1em;
+        height: 2vh;
+    }
+}

@@ -1,0 +1,145 @@
+*
+{
+    margin: none;
+    padding: none;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(92,246,161);
+background: linear-gradient(27deg, rgba(92,246,161,1) 0%, rgba(39,109,172,1) 100%);
+}
+.holder
+{
+    animation: fadeInRight;
+    animation-duration: 1s;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    border-radius: 15px;
+    background: #fff;
+    position: relative;
+    width: 80%;
+}
+.holder h3
+{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-size: 1.5em;
+    align-self: center;
+    color: #05386B;
+}
+.holder label
+{
+    font-family: 'Poppins' , sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+.holder :nth-child(5){padding-bottom: 2em;}
+.holder label span
+{
+    padding-left: 0.1em;
+    padding-bottom: 0.1em;
+    color: #18c968;
+}
+.holder label input[type="text"]
+{
+    background: #f7f7f7;
+    border: 1px solid #c2c2c2;
+    padding: 0.5em;
+    border-radius: 5px;
+    height: 3em;
+}
+.check-box
+{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1em;
+}
+.check-box label
+{
+    padding-left: 0.5em;
+    font-size: 1em;
+    font-family: 'Work Sans', sans-serif;
+}
+.holder input[type="submit"]
+{
+    border-radius: 15px;
+    padding: 0.7em;
+    font-size: 1em;
+    background: #276dac;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.holder input[type="submit"]:hover
+{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 828px) and (min-width: 828px)
+{
+    .holder
+    {
+        height: 36vh;
+        width: 100%;
+    }
+    .holder label
+    {
+        padding-bottom: 2em;
+    }
+    .holder h3
+    {
+        font-size: 2em;
+    }
+    .holder label span
+    {
+        font-size: 1.2em;
+    }
+    .check-box
+    {
+        padding-bottom: 0em;
+    }
+}
+@media only screen and (max-width: 1170px) and (min-width: 1170px)
+{
+    .holder
+    {
+        height: 38vh;
+        width: 125%;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    .holder label
+    {
+        padding-bottom: 3em;
+    }
+    .holder h3
+    {
+        font-size: 3em;
+    }
+    .holder label span
+    {
+        font-size: 2em;
+    }
+    .check-box
+    {
+        padding-bottom: 0em;
+    }
+    .holder label input[type="text"]
+    {
+        height: 4em;
+        font-size: 1em;
+    }
+    .holder input[type="submit"]
+    {
+        font-size: 1.4em;
+    }
+}

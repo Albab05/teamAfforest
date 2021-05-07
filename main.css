@@ -1,0 +1,324 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #5CDB95;
+    flex-direction: column;
+}
+.header
+{   display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    position: relative;
+}
+.header h2
+{
+    font-family: 'Roboto', sans-serif;
+    padding: 1em;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-size: 2em;
+    width: 20%;
+    color: #05386B;
+}
+.header .menu
+{
+    padding: 1em;
+    width: 57.5%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.header ul
+{
+    padding: 0.5em;
+    float: right;
+}
+.header ul li
+{
+    background: #05386B;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.4em;
+    height: 100%;
+    cursor: pointer;
+    list-style: none;
+    display: inline;
+}
+.header ul li:hover
+{
+    background: #EDF5E1;
+    transition: 0.5s;
+}
+.header ul li:hover a
+{
+    color: #05386B;
+    transition: 0.5s;
+}
+.header ul li a
+{
+    font-size: 0.6em;
+    text-decoration: none;
+    color: #EDF5E1;
+}
+.content
+{
+    width: 100%;
+    height: 85%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+}
+.body
+{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+.body h3
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    position: relative;
+    padding-bottom: 1em;
+    max-width: 80%;
+    text-align: center;
+    color: #EDF5E1;
+}
+.body a
+{
+    position: relative;
+    text-decoration: none;
+    color: #05386B;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: 'Montserrat', sans-serif;
+    left: 26%;
+    border: 2px solid #05386B;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+.body a:hover
+{
+    transition: 0.5s;
+    background: #05386B;
+    color: #EDF5E1;
+}
+.img
+{
+    width: 35%;
+    height: 90%;
+    background: url(images/img1.png);
+    background-size: cover;
+}
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #062340;
+}
+.footer .icons
+{
+    position: relative;
+    top: 55%;
+    width: 30%;
+    left: 55%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+}
+.footer .icons img
+{
+    width: 10%;
+}
+.footer .icons img:not(:last-child)
+{
+    padding-right: 10%;
+}
+.footer .footer-content
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.footer .footer-content .newsletter
+{
+    position: relative;
+    left: 5%;
+    top: 10%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.footer .footer-content .newsletter h2
+{
+    font-family: 'Roboto', sans-serif;
+    color: #EDF5E1;
+    padding-bottom: 0.5em;
+}
+.footer .footer-content .newsletter input[type="text"]
+{
+    width: 100%;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    color: #EDF5E1;
+    outline: none;
+    height: 5vh;
+    border-bottom: 2px solid #5CDB95;
+    padding-bottom: 0.2em;
+}
+.footer .footer-content .newsletter input[type="text"]:focus
+{
+    animation: news-animate 2s ease-in-out;
+}
+.footer .footer-content .newsletter  input[type="text"]:focus::placeholder
+{
+    transition: 0.7s;
+    opacity: 0;
+}
+.footer .footer-content .newsletter  input[type="text"]:focus 
+{
+    padding-bottom: 0.5em;
+    transition: 1s;
+    font-size: 1em;
+}
+.footer .footer-content .newsletter  input[type="text"]:focus
+{
+    padding-top: 0.5em;
+    transition: 1s;
+}
+.footer .footer-content .newsletter button
+{
+    position: relative;
+    margin-top: 0.6em;
+    padding: 0.5;
+    color: #EDF5E1;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 30%;
+    padding-left: 5%;
+    padding-right: 75%;
+    height: 12%;
+    background: #ff0370;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+.footer .footer-content .newsletter button:hover
+{
+    background: #ff2b87;
+    transition: 0.5s;
+}
+.footer .footer-content .connect
+{
+    position: relative;
+    padding-left: 5%;
+    margin-left: 5%;
+    width: 20%;
+    top: 5%;
+    font-family: 'Poppins', sans-serif;
+}
+.footer .footer-content .connect h2
+{
+    color: #EDF5E1;
+    padding-left: 0.5em;
+    opacity: 0.5;
+}
+.footer .footer-content .connect ul
+{
+    margin-left: 0.5em;
+}
+.footer .footer-content .connect ul li
+{
+    width: 100%;
+    list-style: none;
+    padding: 0.5em;
+}
+.footer .footer-content .connect ul li img
+{
+    width: 8%;
+}
+.footer .footer-content .connect ul li a
+{
+    text-decoration: none;
+    align-items: center;
+    color: #EDF5E1;
+}
+.footer .footer-content .unnecessary
+{
+    width: 40%;
+    position: relative;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    padding-left: 5%;
+    overflow: hidden;
+}
+.footer .footer-content .unnecessary h2
+{
+    position: relative;
+    top: 20%;
+    color: #EDF5E1;
+    font-family: 'Poppins' , sans-serif;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    opacity: 0.7;
+    line-height: 1em;
+}
+.footer .footer-content .unnecessary img
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1em;
+    width: 50%;
+    opacity: 0.3;
+}
+@keyframes news-animate
+{
+    0%
+    {
+        border-bottom: 2px solid #5CDB95;
+    }
+    50%
+    {
+        border-bottom: 2px solid #ff0370;
+    }
+    100%
+    {
+        border-bottom: 2px solid #5CDB95;
+    }
+}
