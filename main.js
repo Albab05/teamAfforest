@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
-const port = process.env.PORT || 8000;
+const port = process.env.PORT | 8000;
 const app = express();
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 const connection = mysql.createConnection({
